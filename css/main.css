@@ -575,6 +575,76 @@ button.accordion-item__btn.collapsed{
 .footer__list a:hover{
     border-bottom-color: var(--footer-text);
 }
+/* animate */
+.circle1{
+    width: 50px;
+    height: 50px;
+    border: 5px solid var(--purple-dark);
+    border-radius: 50%;
+    position: absolute;
+    left: 20%;
+    top: -5%;
+    animation: figure 7s linear infinite;
+}
+.circle2{
+    width: 70px;
+    height: 70px;
+    border: 5px solid var(--purple);
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: -5%;
+    animation: figure 8s linear infinite;
+}
+.circle3{
+    width: 40px;
+    height: 40px;
+    border: 5px solid var(--purple-light);
+    border-radius: 50%;
+    position: absolute;
+    left: 80%;
+    top: -5%;
+    animation: figure 17s linear infinite;
+}
+.square1{
+    width: 90px;
+    height: 90px;
+    border: 5px solid var(--purple-dark);
+    position: absolute;
+    left: 60%;
+    top: -5%;
+    animation: figure 10s linear infinite;
+}
+.square2{
+    width: 70px;
+    height: 70px;
+    border: 5px solid var(--purple-dark);
+    position: absolute;
+    left: 85%;
+    top: -5%;
+    animation: figure 6s linear infinite;
+}
+.square3{
+    width: 30px;
+    height: 30px;
+    border: 5px solid var(--purple-dark);
+    position: absolute;
+    left: 35%;
+    top: -5%;
+    animation: figure 16s linear infinite;
+}
+@keyframes figure{
+    100% {top: 104%; transform: rotate(360deg);}
+}
+.navbar,
+.carousel,
+.info,
+.works,
+.capabilities,
+.footer{
+    position: relative;
+    z-index: 10;
+}
 /* media */
 @media (max-width: 1399.9px) {}
 @media (max-width: 1199.9px) {
