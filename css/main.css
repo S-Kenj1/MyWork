@@ -38,6 +38,16 @@
 button{
     outline: none !important;
 }
+/* wrapp */
+.wrapp{
+    width: 100%;
+    height: 2800px;
+    background: url('../img/body-bg-right.png') no-repeat right 350px / 50%,
+                url('../img/body-bg-left.png') no-repeat left bottom / 50%,
+                var(--theme-bg);
+    position: relative;
+    overflow: hidden;
+}
 /* .navbar */
 .navbar{
     width: 100%;
@@ -544,6 +554,26 @@ button.accordion-item__btn.collapsed{
     line-height: 22px;
     text-transform: capitalize;
     text-decoration: none;
+}
+/* footer */
+.footer{
+    padding: 200px 0 100px;
+    width: 100%;
+}
+.footer__list a{
+    margin: 10px 25px;
+    display: flex;
+    font-family: var(--montserrat);
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    border-bottom: 2px solid transparent;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: var(--footer-text);
+}
+.footer__list a:hover{
+    border-bottom-color: var(--footer-text);
 }
 /* media */
 @media (max-width: 1399.9px) {}
