@@ -475,6 +475,76 @@ button.accordion-item__btn.collapsed{
     font-size: 18px;
     font-family: var(--montserrat);
 }
+/* works */
+.works__tabs{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: var(--purple-shadow-15);
+    border-radius: 8px;
+    background: var(--theme-bg);
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+.works__tabs a{
+    width: 100%;
+    padding: 19px 20px;
+    box-shadow: var(--black-shadow-35);
+    color: var(--purple);
+    font-family: var(--montserrat);
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.works__tabs a.active{
+    background: var(--purple);
+    color: var(--white);
+}
+.tab-pane{
+    padding: 20px;
+    background: var(--theme-bg);
+    box-shadow: var(--purple-shadow-15);
+    border-radius: 8px;
+}
+.tab-pane img{
+    width: 100%;
+    object-fit: contain;
+}
+.tab-pane h3{
+    font-family: var(--montserrat);
+    font-weight: 600;
+    color: var(--purple);
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 25px;
+}
+.tab-pane p{
+    font-family: var(--montserrat);
+    font-weight: 400;
+    color: var(--dark);
+    font-size: 18px;
+    line-height: 27px;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+.tab-pane__btn,
+.tab-pane__btn:hover{
+    padding: 11px 63px;
+    display: inline-flex;
+    border-radius: 8px;
+    background: var(--purple);
+    box-shadow: var(--purple-shadow-50);
+    color: var(--white);
+    margin: 0 30px 30px;
+    font-family: var(--montserrat);
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: capitalize;
+    text-decoration: none;
+}
 /* media */
 @media (max-width: 1399.9px) {}
 @media (max-width: 1199.9px) {
@@ -497,6 +567,11 @@ button.accordion-item__btn.collapsed{
     }
     .carousel-item__slide{
         display: none;
+    }
+    .works__tabs a{
+        width: 50%;
+        padding: 10px;
+        font-size: 16px;
     }
 }
 @media (max-width: 767.9px) {
@@ -560,6 +635,10 @@ button.accordion-item__btn.collapsed{
     }
     .carousel-item{
         height: auto;
+    }
+    .works__tabs a{
+        width: 100%;
+        text-align: center;
     }
 }
 @media (max-width: 320px) {
