@@ -1,0 +1,198 @@
+@import 'fonts.css';
+@import 'icons.css';
+
+*::before,
+*::after{
+    font-family: 'icons';
+}
+:root{
+    --montserrat: 'montserrat';
+    --trebuchet: 'trebuchet';
+    --purple: #7177f1;
+    --purple-dark: #790ff1;
+    --purple-light: #9297ef;
+    --dark: #323232;
+    --white: #fff;
+    --theme-bg: #fff;
+    --info-p-bg: #fff;
+    --black: #000;
+    --gray: #828282;
+    --gray-light: #ddd;
+    --green: #0fdac2;
+    --footer-text: #7177f1;
+
+    --purple-shadow-50: 0 0 5px 1px rgba(113, 119, 241, .5);
+    --purple-shadow-15: 0 0 5px 3px rgba(113, 119, 241, .15);
+    --black-shadow-35: 0 0 2px rgba(0, 0, 0, .35);
+}
+/* theme смена темы */
+@media (prefers-color-scheme: dark){
+    :root{
+        --theme-bg: #151437;
+        /* --dark: #fff; */
+        --info-p-bg: #7177f1;
+        --gray: #ebebeb;
+        --footer-text: #fff;
+    }
+}
+button{
+    outline: none !important;
+}
+/* .navbar */
+.navbar{
+    width: 100%;
+    padding: 0;
+}
+.navbar-brand{
+    padding: 0 46px 0 40px;
+    margin: 18px 0;
+    font-family: var(--trebuchet);
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.navbar-brand__my{
+    color: var(--purple);
+    display: flex;
+    align-items: center;
+}
+.navbar-brand__work{
+    color: var(--dark);
+    font-style: italic;
+    display: flex;
+}
+.navbar-brand::before,
+.navbar-brand::after{
+    width: 36px;
+    height: 2px;
+    position: absolute;
+    content: '';
+}
+.navbar-brand::after{
+    right: 0;
+    background: var(--purple);
+    filter: blur(2px);
+}
+.navbar-brand::before{
+    left: 0;
+    bottom: 5px;
+    background: var(--dark);
+}
+.navbar-brand__work::before,
+.navbar-brand__work::after,
+.navbar-brand__my::after{
+    width: 27px;
+    height: 2px;
+    position: absolute;
+    content: '';
+}
+.navbar-brand__work::before,
+.navbar-brand__work::after{
+    right: 5px;
+    background: var(--purple);
+    filter: blur(1px);
+}
+.navbar-brand__work::before{
+    bottom: 5px;
+}
+.navbar-brand__work::after{
+    top: 5px;
+}
+.navbar-brand__my::after{
+    left: 11px;
+    background: var(--dark);
+}
+.navbar-brand__my::before{
+    width: 18px;
+    height: 2px;
+    background: var(--dark);
+    content: '';
+    position: absolute;
+    left: 23px;
+    top: 5px;
+}
+.navbar__list{
+    display: flex;
+    align-items: center;
+}
+.navbar__list a{
+    padding: 10px 30px;
+    color: var(--purple);
+    text-decoration: none;
+}
+.navbar__list a,
+.navbar__order{
+    font-size: 24px;
+    line-height: 16px;
+    font-family: var(--montserrat);
+    font-weight: 400;
+    text-transform: capitalize;
+}
+.navbar__order{
+    border: none;
+    outline: none;
+    background: var(--purple);
+    box-shadow: var(--purple-shadow-50);
+    border-radius: 8px;
+    color: var(--white);
+    padding: 10px 43px;
+}
+.navbar-toggler{
+    padding: 5px 20px;
+    border: 2px solid transparent;
+    border-image: 1 linear-gradient(130deg, var(--purple), var(--dark) 60%);
+    outline: none;
+    font-family: var(--trebuchet);
+    font-weight: 700;
+    color: var(--purple);
+    text-transform: uppercase;
+    font-size: 24px;
+    line-height: 18px;
+}
+.navbar-toggler:focus{
+    box-shadow: var(--purple-shadow-50);
+}
+/* media */
+@media (max-width: 1399.9px) {}
+@media (max-width: 1199.9px) {
+    .wrapp{
+        background-image: none;
+    }
+}
+@media (max-width: 991.9px) {
+    .navbar__list{
+        flex-direction: column;
+        align-items: flex-end;
+        border: 2px solid var(--purple);
+        padding: 20px;
+        border-radius: 20px 0  20px 20px;
+        width: max-content;
+        background: var(--white);
+    }
+    .navbar__list a{
+        padding: 10px 0;
+    }
+    .carousel-item__slide{
+        display: none;
+    }
+}
+@media (max-width: 767.9px) {
+
+}
+@media (max-width: 575.9px) {
+
+}
+@media (max-width: 480px) {
+    .navbar-toggler,
+    .navbar-brand__work,
+    .navbar-brand__my{
+        font-size: 18px;
+    }
+}
+@media (max-width: 320px) {
+
+}
