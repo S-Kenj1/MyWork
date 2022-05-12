@@ -290,6 +290,100 @@ button{
 .carousel-indicators .active{
     background: var(--purple) !important;
 }
+/* info */
+.info,
+.capabilities,
+.works{
+    width: 100%;
+    padding-top: 75px;
+}
+.info__img,
+.info__content{
+    width: 100%;
+    height: 100%;
+}
+.info__img{
+    text-align: center;
+    position: relative;
+}
+.info__img img{
+    width: 80%;
+    height: 100%;
+    object-fit: contain;
+}
+.info__img p{
+    position: absolute;
+    top: 24px;
+    left: 0;
+    background: var(--info-p-bg);
+    padding: 23px 25px;
+    width: max-content;
+    border-radius: 8px;
+    box-shadow: var(--purple-shadow-50);
+    margin: 0;
+    font-family: var(--montserrat);
+    font-weight: 400;
+    color: var(--dark);
+    font-size: 18px;
+    line-height: 18px;
+    text-transform: uppercase;
+}
+.info__img span{
+    position: absolute;
+    top: -14px;
+    right: -10px;
+    width: 40px;
+    height: 40px;
+    background: var(--green);
+    border-radius: 50%;
+    color: var(--white);
+    font-weight: 700;
+    font-style: italic;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.info__content{
+    box-shadow: var(--purple-shadow-15);
+    padding: 30px;
+    background: var(--theme-bg);
+    border-radius: 8px;
+}
+.info__content h3{
+    font-family: var(--montserrat);
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 30px;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+    color: var(--purple);
+}
+.info__content p{
+    font-family: var(--montserrat);
+    font-weight: 400;
+    color: var(--dark);
+    font-size: 18px;
+    line-height: 27px;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+.info__content--btn{
+    padding: 13px 33px;
+    display: inline-flex;
+    border-radius: 8px;
+    background: var(--purple);
+    color: var(--white);
+    font-family: var(--montserrat);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+    text-transform: uppercase;
+    margin: 0 0 20px 80px;
+    text-decoration: none;
+}
+.info__content--btn:hover{
+    color: var(--white);
+}
 /* media */
 @media (max-width: 1399.9px) {}
 @media (max-width: 1199.9px) {
@@ -322,6 +416,18 @@ button{
     .carousel-item h3{
         padding-left: 0;
         text-align: center;
+    }
+    .info__img{
+        display: none;
+    }
+    .info__content{
+        text-align: center;
+    }
+    .info__content h3{
+        font-size: 30px;
+    }
+    .info__content--btn{
+        margin-left: 0;
     }
 }
 @media (max-width: 480px) {
