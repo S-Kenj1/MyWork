@@ -156,6 +156,64 @@ button{
 .navbar-toggler:focus{
     box-shadow: var(--purple-shadow-50);
 }
+/* modal */
+.modal-content{
+    border: 2px solid var(--purple);
+}
+.modal-header,
+.modal-footer{
+    border: none;
+}
+.modal-title{
+    font-size: 20px;
+    font-family: var(--montserrat);
+    font-weight: 700;
+    color: var(--purple);
+}
+.btn__send{
+    padding: 5px 20px;
+    border: 2px solid var(--purple);
+    font-weight: 700;
+    font-family: var(--trebuchet);
+    text-transform: uppercase;
+    font-size: 20px;
+    background: transparent;
+    color: var(--purple);
+    line-height: 18px;
+    transition: background .5s, color .5s;
+}
+.btn__send:hover{
+    background: var(--purple);
+    color: var(--white);
+
+}
+.modal-body input,
+.modal-body textarea{
+    border: none;
+    border-bottom: 2px solid var(--purple);
+    width: 100%;
+    padding: 10px 0;
+    font-family: var(--montserrat);
+    font-weight: 600;
+    color: var(--dark);
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+.modal-body textarea{
+    /* resize у техта арии убирает ползунок и не дает вытягиватся по высоте */
+    resize: none;
+    height: 180px;
+}
+.modal-body input:focus,
+.modal-body textarea:focus{
+    outline: none;
+    border-bottom-color: var(--dark);
+}
+.modal-body input::placeholder,
+.modal-body textarea::placeholder{
+    color: var(--purple);
+    text-transform: capitalize;
+}
 /* carousel */
 .carousel{
     width: 100%;
